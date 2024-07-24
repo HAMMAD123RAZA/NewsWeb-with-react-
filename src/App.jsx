@@ -5,7 +5,7 @@ import { BrowserRouter as Router , Routes ,Route } from 'react-router-dom'
 import Sports from './components/Sports'
 import Tech from './components/Tech'
 import Weather from './components/Weather'
-import Search from './components/Search'
+// import Search from './components/Search'
 import Politics from './components/Politics'
 import Education from './components/Education'
 
@@ -15,7 +15,7 @@ const App = () => {
     <>
     <Router>
     <Navbar/>
-    <Search/>
+    {/* <Search/> */}
 
       <Routes  >
         <Route element={<Items/>} path='/' />
