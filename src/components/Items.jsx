@@ -33,6 +33,7 @@ const Items = () => {
     item.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+
   // Calculate the current articles to display based on pagination
   const indexOfLastArticle = currentPage * articlesPerPage;
   const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
@@ -45,12 +46,12 @@ const Items = () => {
       <div className="relative w-full max-w-sm mx-auto my-4">
         <input
           type="text"
-          onChange={(e) => setSearchQuery(e.target.value)}
+          onChange={(e)=>setSearchQuery(e.target.value)}
           value={searchQuery}
           placeholder="Search By Title"
-          className="border-2 border-black rounded-md w-full px-5 py-3 pl-12"
+          className="border-2 border-blue-700 rounded-md w-full px-5 py-3 pl-12"
         />
-        <IoMdSearch className="absolute top-1/2 left-3 transform -translate-y-1/2 text-black text-xl" />
+        <IoMdSearch className="absolute  top-1/2 left-3 transform -translate-y-1/2 text-blue-700 text-xl" />
       </div>
 
       {error ? (
@@ -70,7 +71,7 @@ const Items = () => {
           </div>
           <div className="flex justify-center my-4">
             <button
-              className="px-4 py-2 mx-1 border rounded-md"
+              className="px-4 text-blue-700 py-2 mx-1 font-bold border rounded-md"
               onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
               disabled={currentPage === 1}
             >
@@ -80,7 +81,7 @@ const Items = () => {
               Page {currentPage} of {totalPages}
             </span>
             <button
-              className="px-4 py-2 mx-1 border rounded-md"
+              className="px-4 py-2 mx-1 font-bold border rounded-md text-blue-700 "
               onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
               disabled={currentPage === totalPages}
             >

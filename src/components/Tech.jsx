@@ -7,7 +7,7 @@ const Tech = () => {
     useEffect(() => {
         const getData = async () => {
             try {
-                const api = await fetch('https://newsapi.org/v2/everything?q=tech&from=2024-06-22&sortBy=publishedAt&apiKey=ebd04963961943019b59ccbc3fb38266');
+                const api = await fetch('https://newsapi.org/v2/everything?q=tech&sortBy=publishedAt&apiKey=ebd04963961943019b59ccbc3fb38266');
                 const res = await api.json();
                 setData(res.articles);
                 console.log(res);
