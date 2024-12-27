@@ -1,0 +1,13 @@
+authentication
+
+signup//
+
+1.email checking exists or not
+2.if no then hashing password by bcrypt
+3.create user 
+
+
+login //
+
+1.email checking exists or not
+2.if yes then compare password by bcrypt

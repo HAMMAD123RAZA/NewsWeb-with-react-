@@ -1,0 +1,5 @@
+SPA single page app
+means jaha whole page refresh na ho 
+
+what is refs? or useRef?
+useref directly input element ka access deta he like document.getElement()

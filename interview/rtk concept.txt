@@ -1,0 +1,17 @@
+RTK STEPS
+
+1) MAKE SLICE (CREATESLICE()) AND NAME IT  AND INITIALSTATE THEN REDUCERS
+
+REDUCERS BANATAY HEN APNI STATE KO CHANGE KRNE K LYE
+
+The USESELECTOR hook is used to extract the state of a component from the redux store using the selector function. 
+The USEDISPATCH hook is used to update the state of the component
+
+Thunk middleware///
+
+aik function hh jo 
+Returns a function into a function or is k under hum asynchro.. kamm krte hein like data fetching
+
+getState current state ko get krne k lye hota hh
+
+///
